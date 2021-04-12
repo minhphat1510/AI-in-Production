@@ -1,0 +1,115 @@
+2021-03-21 22:56:11.431 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:56:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+2021-03-21 22:56:11.487 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:56:11] "[33mGET /signin.css HTTP/1.1[0m" 404 -
+2021-03-21 22:56:14.767 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:56:14] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+2021-03-21 22:56:15.077 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:56:15] "[33mGET /signin.css HTTP/1.1[0m" 404 -
+2021-03-21 22:56:20.207 INFO app - train: Route train.
+2021-03-21 22:56:20.207 INFO app - train: Loading the dataset tools.
+2021-03-21 22:56:20.207 INFO app - train: Creating the ModelTrain class passing the dataset as argument.
+2021-03-21 22:56:20.207 INFO data_processing - get_dataframe_to_train: Geting datafram to train.
+2021-03-21 22:56:20.207 INFO data_processing - load_all_json_by_dir: Loading all json"s...
+2021-03-21 22:56:20.207 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2017-11.json
+2021-03-21 22:56:20.249 INFO utils - _init_num_threads: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2021-03-21 22:56:20.249 INFO utils - _init_num_threads: NumExpr defaulting to 8 threads.
+2021-03-21 22:56:20.264 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2017-12.json
+2021-03-21 22:56:20.437 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-01.json
+2021-03-21 22:56:20.628 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-02.json
+2021-03-21 22:56:20.840 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-03.json
+2021-03-21 22:56:21.070 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-04.json
+2021-03-21 22:56:21.288 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-05.json
+2021-03-21 22:56:21.516 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-06.json
+2021-03-21 22:56:21.731 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-07.json
+2021-03-21 22:56:21.922 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-08.json
+2021-03-21 22:56:22.106 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-09.json
+2021-03-21 22:56:22.339 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-10.json
+2021-03-21 22:56:22.660 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-11.json
+2021-03-21 22:56:23.127 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2018-12.json
+2021-03-21 22:56:23.411 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2019-01.json
+2021-03-21 22:56:23.636 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2019-02.json
+2021-03-21 22:56:23.803 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2019-03.json
+2021-03-21 22:56:24.018 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2019-04.json
+2021-03-21 22:56:24.199 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2019-05.json
+2021-03-21 22:56:24.435 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2019-06.json
+2021-03-21 22:56:24.636 INFO data_processing - load_all_json_by_dir: Reading the file: invoices-2019-07.json
+2021-03-21 22:56:25.655 INFO data_processing - transforming_columns: Transforming features.
+2021-03-21 22:56:34.474 INFO data_processing - dropping_unnescessary_columns: Dropping columns.
+2021-03-21 22:56:34.516 INFO data_processing - create_timeseries: Creating time series.
+2021-03-21 22:56:34.599 INFO data_processing - get_dataframe_to_train: Saving Dataset Regression.
+2021-03-21 22:56:41.606 INFO data_processing - get_dataframe_to_train: Saving Dataset Time Series.
+2021-03-21 22:56:41.757 INFO app - train: Runing the trainin process.
+2021-03-21 22:56:41.757 INFO model - run: Runing the train process.
+2021-03-21 22:56:41.758 INFO model - process_dataset: Process Dataset.
+2021-03-21 22:56:41.758 INFO model - process_dataset: Removing outliers.
+2021-03-21 22:56:41.759 INFO model - process_dataset: Transforming date column.
+2021-03-21 22:56:41.762 INFO model - process_dataset: Imputing missing.
+2021-03-21 22:56:41.763 INFO model - tuning_model: Starting tuning model.
+2021-03-21 22:56:41.764 INFO model - format_to_prophet: Formating to prophet.
+2021-03-21 22:57:39.830 INFO model - tuning_model: Finished tuning with results: R2 - 5    0.693
+Name: R2, dtype: float64 | MSE - 5    4173236.484
+Name: MSE, dtype: float64.
+2021-03-21 22:57:39.830 INFO model - train_predict: Starting a training process for 30.
+2021-03-21 22:57:40.564 INFO forecaster - parse_seasonality_args: Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2021-03-21 22:57:43.304 INFO model - train_predict: Finished training with results: R2 - 0.693 | MSE - 4173236.484 | MAE - 1506.637.
+2021-03-21 22:57:43.304 INFO model - save_joblib: Saving model into model/prophet.joblib.
+2021-03-21 22:57:43.317 INFO model - run: Finishing the train process.
+2021-03-21 22:57:43.317 INFO app - train: Returning results as HTML.
+2021-03-21 22:57:43.320 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:57:43] "[37mGET /train HTTP/1.1[0m" 200 -
+2021-03-21 22:57:43.671 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:57:43] "[33mGET /signin.css HTTP/1.1[0m" 404 -
+2021-03-21 22:58:08.168 INFO app - predict: Route predict.
+2021-03-21 22:58:08.168 INFO app - predict: Creating the ModelPredict instance.
+2021-03-21 22:58:08.174 INFO app - predict: Predicting in 10 future.
+2021-03-21 22:58:08.174 INFO model - predict: Predicting the next 10 days.
+2021-03-21 22:58:09.337 INFO app - predict: Transforming in a real json object.
+2021-03-21 22:58:09.338 INFO app - predict: Return the HTML with the predictions.
+2021-03-21 22:58:09.341 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:58:09] "[37mGET /predict/10 HTTP/1.1[0m" 200 -
+2021-03-21 22:58:09.380 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:58:09] "[33mGET /predict/signin.css HTTP/1.1[0m" 404 -
+2021-03-21 22:59:44.354 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:59:44] "[33mGET /dasborad HTTP/1.1[0m" 404 -
+2021-03-21 22:59:48.074 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:59:48] "[33mGET /dashborad HTTP/1.1[0m" 404 -
+2021-03-21 22:59:52.533 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:59:52] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+2021-03-21 22:59:52.840 INFO _internal - _log: 127.0.0.1 - - [21/Mar/2021 22:59:52] "[33mGET /signin.css HTTP/1.1[0m" 404 -
+2021-03-21 23:00:38.948 INFO _internal - _log:  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-03-28 21:55:01.873 INFO _internal - _log:  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-03-28 21:56:20.068 INFO _internal - _log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-28 21:56:56.088 INFO app - index: Route index.
+2021-03-28 21:56:56.093 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:56:56] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-28 21:56:56.119 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:56:56] "[33mGET /signin.css HTTP/1.1[0m" 404 -
+2021-03-28 21:56:56.434 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:56:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-03-28 21:57:03.123 INFO app - train: Route train.
+2021-03-28 21:57:03.123 INFO app - train: Loading the dataset tools.
+2021-03-28 21:57:03.123 INFO app - train: Creating the ModelTrain class passing the dataset as argument.
+2021-03-28 21:57:03.123 INFO data_processing - get_dataframe_to_train: Geting datafram to train.
+2021-03-28 21:57:03.123 INFO data_processing - load_all_json_by_dir: Loading all json"s...
+2021-03-28 21:57:03.123 ERROR app - log_exception: Exception on /train [GET]
+Traceback (most recent call last):
+  File "C:\Users\felipe_dieb\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\felipe_dieb\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\felipe_dieb\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\felipe_dieb\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\felipe_dieb\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\felipe_dieb\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\felipe_dieb\Documents\Coursera\trab_f\work_final\ai-workflow-capstone\api\app.py", line 59, in train
+    training = ModelTrain(data_controller.get_dataframe_to_train())
+  File "C:\Users\felipe_dieb\Documents\Coursera\trab_f\work_final\ai-workflow-capstone\api\data_processing.py", line 97, in get_dataframe_to_train
+    data_set = self.load_all_json_by_dir()
+  File "C:\Users\felipe_dieb\Documents\Coursera\trab_f\work_final\ai-workflow-capstone\api\data_processing.py", line 30, in load_all_json_by_dir
+    files = os.listdir(self.DATA_DIR)
+FileNotFoundError: [WinError 3] O sistema não pode encontrar o caminho especificado: '..\\solution-guidance\\cs-train'
+2021-03-28 21:57:03.129 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:57:03] "[35m[1mGET /train HTTP/1.1[0m" 500 -
+2021-03-28 21:57:43.828 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:57:43] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+2021-03-28 21:57:43.852 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:57:43] "[33mGET /signin.css HTTP/1.1[0m" 404 -
+2021-03-28 21:58:42.565 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:58:42] "[33mGET /predict HTTP/1.1[0m" 404 -
+2021-03-28 21:58:44.906 INFO app - predict: Route predict.
+2021-03-28 21:58:44.906 INFO app - predict: Creating the ModelPredict instance.
+2021-03-28 21:58:46.502 INFO app - predict: Predicting in 1 future.
+2021-03-28 21:58:46.502 INFO model - predict: Predicting the next 1 days.
+2021-03-28 21:58:46.533 INFO utils - _init_num_threads: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2021-03-28 21:58:46.533 INFO utils - _init_num_threads: NumExpr defaulting to 8 threads.
+2021-03-28 21:58:47.664 INFO app - predict: Transforming in a real json object.
+2021-03-28 21:58:47.665 INFO app - predict: Return the HTML with the predictions.
+2021-03-28 21:58:47.668 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:58:47] "[37mGET /predict/1 HTTP/1.1[0m" 200 -
+2021-03-28 21:58:47.692 INFO _internal - _log: 127.0.0.1 - - [28/Mar/2021 21:58:47] "[33mGET /predict/signin.css HTTP/1.1[0m" 404 -
