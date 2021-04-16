@@ -1,4 +1,4 @@
-# coursera-ibm-ai-workflow-submission
+# ibm-ai-workflow-submission
 
 
 ## 0. Runing the application 
